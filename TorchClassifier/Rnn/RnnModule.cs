@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using TorchSharp;
 using TorchSharp.Modules;
 
-namespace TorchClassifier
+namespace TorchClassifier.Rnn
 {
-    internal sealed class RnnModule: torch.nn.Module
+    internal sealed class RnnModule : torch.nn.Module
     {
         // уровень сети 1.1
         private readonly torch.nn.Module<torch.Tensor, torch.Tensor> _i2h;
@@ -22,7 +22,7 @@ namespace TorchClassifier
         // hidden parameters size (128 by default):
         private int _hiddenSize;
 
-        public RnnModule(int inputSize, int hiddenSize, int outputSize): base(nameof(RnnModule))
+        public RnnModule(int inputSize, int hiddenSize, int outputSize) : base(nameof(RnnModule))
         {
             _hiddenSize = hiddenSize;
             _i2h = torch.nn.Linear(inputSize + hiddenSize, hiddenSize);

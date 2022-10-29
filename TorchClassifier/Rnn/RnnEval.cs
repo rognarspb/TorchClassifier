@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TorchSharp;
 
-namespace TorchClassifier
+namespace TorchClassifier.Rnn
 {
     internal class RnnEval
     {
@@ -15,7 +15,7 @@ namespace TorchClassifier
         {
             _rnn = rnn;
         }
-    
+
         // Just return an output given a line
         public torch.Tensor Evaluate(torch.Tensor lineTensor)
         {

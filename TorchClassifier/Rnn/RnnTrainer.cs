@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using TorchSharp;
 using TorchSharp.Modules;
 
-namespace TorchClassifier
+namespace TorchClassifier.Rnn
 {
     internal class RnnTrainer
     {

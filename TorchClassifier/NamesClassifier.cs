@@ -164,7 +164,7 @@ namespace TorchClassifier
                 rnn.save(ModelFileName);
             }
 
-            var testNames = new [] { "Марьяна", "Лена", "Ульяна", "Антон", "Сергей", "Света", "Мика", "Женя", "Руслан", "Святогор", "Святомир"};
+            var testNames = new [] { "Марьяна", "Лена", "Ульяна", "Зубаригет", "Антон", "Сергей", "Света", "Мика", "Женя", "Руслан", "Святогор", "Святомир"};
             Console.WriteLine("\nTesting predict capabilities:");
             foreach (var testName in testNames)
             {
